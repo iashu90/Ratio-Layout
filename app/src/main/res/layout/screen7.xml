@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f5f6"
+        app:abbott_height="49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.ratio.AbbottImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_android_back"
+        app:abbott_height="24"
+        app:abbott_marginLeft="16"
+        app:abbott_width="25"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/toolbar" />
+
+    <com.example.ratio.AbbottImageView
+        android:id="@+id/toolbarLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_toolbar_logo"
+        app:abbott_height="20"
+        app:abbott_marginLeft="30"
+        app:abbott_width="147"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintLeft_toRightOf="@id/backArrow"
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+
+        />
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ef6c00"
+        android:gravity="center"
+        app:abbott_height="151"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/topTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sans_pro_semi_bold"
+        android:gravity="center"
+        android:text="HIGH GLUCOSE"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:abbott_height="46"
+        app:abbott_marginTop="4"
+        app:abbott_textSize="18"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/sans_pro_semi_bold"
+        android:gravity="center"
+        android:text="15.1"
+        android:textColor="#ffffff"
+        app:abbott_marginLeft="69"
+        android:textStyle="bold"
+        app:abbott_height="120"
+        app:abbott_textSize="96"
+        app:abbott_width="180"
+        app:abbott_marginBottom="31"
+        app:layout_constraintBottom_toBottomOf="@id/topView"
+        app:layout_constraintLeft_toLeftOf="parent"
+         />
+    ↗
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/arrowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="↑"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:textStyle="bold"
+        app:abbott_height="46"
+        app:abbott_textSize="40"
+        app:abbott_width="46"
+        app:layout_constraintTop_toBottomOf="@id/topTextView"
+        app:layout_constraintLeft_toRightOf="@id/mainTextView"
+        />
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/unitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center"
+        android:text="mmol/L"
+        android:textColor="#ffffff"
+        app:abbott_marginBottom="31"
+        android:textStyle="bold"
+        app:abbott_height="23"
+        app:abbott_textSize="18"
+        app:abbott_width="100"
+        app:layout_constraintLeft_toRightOf="@id/mainTextView"
+        app:layout_constraintBottom_toBottomOf="@id/topView"
+       />
+
+    <com.example.ratio.AbbottImageView
+        android:id="@+id/graphImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/te"
+        app:abbott_height="270"
+        app:layout_constraintTop_toBottomOf="@id/topView" />
+
+
+    <com.example.ratio.AbbottButtonView
+        android:id="@+id/applyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f4f5"
+        android:fontFamily="@font/sans_pro_semi_bold"
+        android:gravity="center"
+        android:text="Add Note"
+        android:textColor="#138be8"
+        app:abbott_height="40"
+        app:abbott_marginBottom="16"
+        app:abbott_marginLeft="16"
+        app:abbott_marginRight="16"
+        app:abbott_textSize="18"
+        app:layout_constraintBottom_toTopOf="@id/greenBar" />
+
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/greenBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8fcb3a"
+        android:gravity="center"
+        android:textColor="#0d0d0d"
+        app:abbott_height="8"
+        app:layout_constraintBottom_toTopOf="@id/block8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.example.ratio.AbbottTextView
+        android:id="@id/block8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4c4c4d"
+        android:fontFamily="@font/sans_pro"
+        android:gravity="center_horizontal"
+        android:text="SENSOR ENDS IN 21 DAYS"
+        android:textColor="#ffffff"
+        app:abbott_height="40"
+        app:abbott_paddingBottom="8"
+        app:abbott_paddingRight="10"
+        app:abbott_paddingTop="8"
+        app:abbott_textSize="17"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

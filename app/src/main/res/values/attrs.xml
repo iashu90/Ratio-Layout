@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AbbottTextView">
+        <attr name="abbott_height" format="integer" />
+        <attr name="abbott_width" format="integer" />
+
+        // Margins
+        <attr name="abbott_margin" format="integer" />
+        <attr name="abbott_marginLeft" format="integer" />
+        <attr name="abbott_marginTop" format="integer" />
+        <attr name="abbott_marginRight" format="integer" />
+        <attr name="abbott_marginBottom" format="integer" />
+
+        // Padding
+        <attr name="abbott_padding" format="integer" />
+        <attr name="abbott_paddingLeft" format="integer" />
+        <attr name="abbott_paddingTop" format="integer" />
+        <attr name="abbott_paddingRight" format="integer" />
+        <attr name="abbott_paddingBottom" format="integer" />
+
+
+        // Text
+        <attr name="abbott_textSize" format="float" />
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SizeHelper">
+        <attr name="screenHeight_percent" format="float" />
+        <attr name="screenWidth_percent" format="float" />
+    </declare-styleable>
+
+
+</resources>

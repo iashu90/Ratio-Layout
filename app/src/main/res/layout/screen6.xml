@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.grishberg.constraintlayoutex.ConstraintLayoutEx xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/block1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:abbott_height="52"
+        android:background="#ef6c00"
+        app:abbott_marginLeft="40"
+       app:abbott_marginRight="40"
+        android:gravity="center"
+        android:text="High Glucose (above 250 mg/dL)"
+        android:textColor="#000"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.ratio.AbbottTextView
+        android:id="@+id/block2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:abbott_height="52"
+        android:background="#ff2c00"
+        android:gravity="center"
+        android:text="High Glucose (above 250 mg/dL)"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1" />
+
+
+
+</com.grishberg.constraintlayoutex.ConstraintLayoutEx>

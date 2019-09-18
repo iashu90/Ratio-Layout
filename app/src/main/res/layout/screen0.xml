@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#f4f5f6"
+        android:drawableLeft="@drawable/ic_arrow_back"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Sample"
+        android:textSize="@dimen/_22ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="39dp"
+        android:background="#ef6c00"
+        android:gravity="center"
+        android:text="High Glucose (above 250 mg/dL)"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="39dp"
+        android:background="#ffbc00"
+        android:gravity="center"
+        android:text="Between target range and 250 mg/dL"
+        android:textColor="#0d0d0d"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1" />
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="39dp"
+        android:background="#8fcb3a"
+        android:gravity="center"
+        android:text="Glucose within your target range"
+        android:textColor="#0d0d0d"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block2" />
+
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block4"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="39dp"
+        android:background="#ffbc00"
+        android:gravity="center"
+        android:text="Between target range and 250 mg/dL"
+        android:textColor="#0d0d0d"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block3" />
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block5"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="39dp"
+        android:background="#ed1c24"
+        android:gravity="center"
+        android:text="Low Glucose (below 70 mg/dL)"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block4" />
+
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:text="Glucose Background Color"
+        android:textColor="#0d0d0d"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/block5" />
+
+
+    <ui.trident.ratiotest.Tex
+        android:id="@+id/block7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6sp"
+        android:text="The background color is determined by your current glucose."
+        android:textColor="#0d0d0d"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintTop_toBottomOf="@id/block6" />
+
+    <TextView
+        android:id="@+id/block8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#138be8"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="10sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
